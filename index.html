@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Leadership Event HTML5 Bootstrap v5 Template</title>
+  <title>Dariko</title>
 
   <!-- CSS FILES -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,17 +50,31 @@ https://templatemo.com/tm-575-leadership-event
       background-repeat: no-repeat;
       background-size: cover;
     }
+
+    .container .image-container img {
+      transition: all .3s ease-in;
+    }
+
+    .container .image-container img:hover {
+      transform: scale(1.098);
+    }
+
+    @media(max-width: 768px) {
+      iframe {
+        height: 360px !important;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg shadow">
     <div class="container">
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      <button class="navbar-toggler color-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon color-dark"></span>
       </button>
 
       <a href="index.html" class="navbar-brand mx-auto mx-lg-0">
@@ -87,17 +101,17 @@ https://templatemo.com/tm-575-leadership-event
             <a class="nav-link click-scroll" href="#section_3">Yo'nalishlar</a>
           </li>
 
-          <!-- <li class="nav-item">
-                        <a class="nav-link click-scroll" href="#section_5">Pricing</a>
-                    </li> -->
+          <li class="nav-item">
+            <a class="nav-link click-scroll" href="#section_4">Afzalliklar</a>
+          </li>
 
           <li class="nav-item">
-            <a class="nav-link click-scroll" href="#section_4">Manzil</a>
+            <a class="nav-link click-scroll" href="#section_5">Manzil</a>
           </li>
 
           <!-- <li class="nav-item">
-                        <a class="nav-link click-scroll" href="#section_7">Bog'lanish</a>
-                    </li> -->
+            <a class="nav-link click-scroll" href="#section_5">Bog'lanish</a>
+          </li> -->
 
           <!-- <li class="nav-item">
                         <a class="nav-link custom-btn btn d-none d-lg-block" href="#">Buy Tickets</a>
@@ -173,9 +187,9 @@ https://templatemo.com/tm-575-leadership-event
         </section> -->
 
 
-    <section class="about py-5" id="section_2">
+    <section class="about section-padding secondary-padding" id="section_2">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row">
 
           <div class="col-lg-12 text-center">
             <h2 class="mb-5">Biz <u class="text-info">Haqimizda</u></h2>
@@ -189,10 +203,18 @@ https://templatemo.com/tm-575-leadership-event
               Bizning dasturlarimiz amaliyotga yo'naltirilgan, biz materialning dolzarbligini kuzatib
               boramiz va ish va amaliyotda yordam beramiz.
             </p>
+
+            <h3 class="mb-3">Zamon bilan birga bo'ling!</h3>
+
+            <p>Bizning malakali o'qituvchilar tomonidan dasturlash olamidagi so'nggi texnologiyalarni o'rganib o'zingiz
+              orzu qilgan dasturni yarating.
+            </p>
           </div>
 
-          <div class="col-lg-6 col-12 mt-5 mt-lg-0">
-            <img class="img-fluid rounded" src="./images/1.avif" alt="">
+          <div class="col-lg-6 col-12 mt-5 mt-lg-0 image-container">
+
+            <img class="img-fluid shadow p-3 mb-5 bg-body rounded"
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" />
           </div>
 
         </div>
@@ -200,7 +222,7 @@ https://templatemo.com/tm-575-leadership-event
     </section>
 
 
-    <!-- <section class="speakers py-5" id="section_3">
+    <!-- <section class="speakers section-padding" id="section_3">
             <div class="container">
                 <div class="row">
 
@@ -324,7 +346,7 @@ https://templatemo.com/tm-575-leadership-event
         </section> -->
 
 
-    <section class="schedule py-5" id="section_3">
+    <section class="schedule section-padding" id="section_3">
       <div class="container">
         <div class="row">
 
@@ -371,7 +393,7 @@ https://templatemo.com/tm-575-leadership-event
 
             <div class="tab-content mt-5" id="nav-tabContent">
               <div class="tab-pane fade show active" id="nav-DayOne" role="tabpanel" aria-labelledby="nav-DayOne-tab">
-                <div class="row pb-5 mb-5">
+                <div class="row">
                   <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                       <button class="nav-link text-info px-5 fs-4 active" id="id-1" data-bs-toggle="pill"
@@ -401,12 +423,12 @@ https://templatemo.com/tm-575-leadership-event
 
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                               Salom frontend
                             </button>
                           </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                               <p>- Mentor va ushbu kursda nimalar oqitilishi haqida qisqacha malumot
@@ -606,12 +628,12 @@ https://templatemo.com/tm-575-leadership-event
 
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                               data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                               FlexBox
                             </button>
                           </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                               <p>- Flex haqida tushincha va undan foydalanish
@@ -821,12 +843,12 @@ https://templatemo.com/tm-575-leadership-event
 
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                               JavaScript. O’zgaruvchilar va Math kutubxonasi
                             </button>
                           </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                               <p>- JavaScript haqida
@@ -1230,7 +1252,7 @@ https://templatemo.com/tm-575-leadership-event
               </div>
 
               <div class="tab-pane fade show" id="nav-DayTwo" role="tabpanel" aria-labelledby="nav-DayTwo-tab">
-                <div class="row pb-5 mb-5">
+                <div class="row">
                   <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                       <button class="nav-link text-info px-5 fs-4 active" id="id-1" data-bs-toggle="pill"
@@ -1332,7 +1354,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h5">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll5" aria-expanded="false" aria-controls="coll5">Tanlash operatorlari</button>
+                              data-bs-target="#coll5" aria-expanded="false" aria-controls="coll5">Tanlash
+                              operatorlari</button>
                           </h2>
                           <div id="coll5" class="accordion-collapse collapse" aria-labelledby="h5"
                             data-bs-parent="#accordionExample">
@@ -1348,7 +1371,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h6">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll6" aria-expanded="false" aria-controls="coll6">Methodlar bilan ishlash</button>
+                              data-bs-target="#coll6" aria-expanded="false" aria-controls="coll6">Methodlar bilan
+                              ishlash</button>
                           </h2>
                           <div id="coll6" class="accordion-collapse collapse" aria-labelledby="h6"
                             data-bs-parent="#accordionExample">
@@ -1365,7 +1389,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h7">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll7" aria-expanded="false" aria-controls="coll7">String klassi metodlari</button>
+                              data-bs-target="#coll7" aria-expanded="false" aria-controls="coll7">String klassi
+                              metodlari</button>
                           </h2>
                           <div id="coll7" class="accordion-collapse collapse" aria-labelledby="h7"
                             data-bs-parent="#accordionExample">
@@ -1383,7 +1408,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h8">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll8" aria-expanded="false" aria-controls="coll8">Takrorlash va o'tish operatorlari</button>
+                              data-bs-target="#coll8" aria-expanded="false" aria-controls="coll8">Takrorlash va o'tish
+                              operatorlari</button>
                           </h2>
                           <div id="coll8" class="accordion-collapse collapse" aria-labelledby="h8"
                             data-bs-parent="#accordionExample">
@@ -1417,7 +1443,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h10">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll10" aria-expanded="false" aria-controls="coll10">"Ma’lumotlarni bir turdan boshqa turga o`tkazish
+                              data-bs-target="#coll10" aria-expanded="false" aria-controls="coll10">"Ma’lumotlarni bir
+                              turdan boshqa turga o`tkazish
                               "</button>
                           </h2>
                           <div id="coll10" class="accordion-collapse collapse" aria-labelledby="h10"
@@ -1434,7 +1461,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h11">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll11" aria-expanded="false" aria-controls="coll11">Primitive type larning qobiq(Wrapper) klasslari, Math klassi methodlari</button>
+                              data-bs-target="#coll11" aria-expanded="false" aria-controls="coll11">Primitive type
+                              larning qobiq(Wrapper) klasslari, Math klassi methodlari</button>
                           </h2>
                           <div id="coll11" class="accordion-collapse collapse" aria-labelledby="h11"
                             data-bs-parent="#accordionExample">
@@ -1450,7 +1478,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h12">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll12" aria-expanded="false" aria-controls="coll12">OOP tushunchasi. Object, class, o’zgaruvchi, method va konstruktor tushunchalari.</button>
+                              data-bs-target="#coll12" aria-expanded="false" aria-controls="coll12">OOP tushunchasi.
+                              Object, class, o’zgaruvchi, method va konstruktor tushunchalari.</button>
                           </h2>
                           <div id="coll12" class="accordion-collapse collapse" aria-labelledby="h12"
                             data-bs-parent="#accordionExample">
@@ -1468,7 +1497,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h13">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll13" aria-expanded="false" aria-controls="coll13">OOP prinsiplari. Encapsulation</button>
+                              data-bs-target="#coll13" aria-expanded="false" aria-controls="coll13">OOP prinsiplari.
+                              Encapsulation</button>
                           </h2>
                           <div id="coll13" class="accordion-collapse collapse" aria-labelledby="h13"
                             data-bs-parent="#accordionExample">
@@ -1485,7 +1515,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h14">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll14" aria-expanded="false" aria-controls="coll14">"Package. Access modifikatorlari (private, default, protected, public)
+                              data-bs-target="#coll14" aria-expanded="false" aria-controls="coll14">"Package. Access
+                              modifikatorlari (private, default, protected, public)
                               "</button>
                           </h2>
                           <div id="coll14" class="accordion-collapse collapse" aria-labelledby="h14"
@@ -1519,7 +1550,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h16">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll16" aria-expanded="false" aria-controls="coll16">Polymorphism. Overloading</button>
+                              data-bs-target="#coll16" aria-expanded="false" aria-controls="coll16">Polymorphism.
+                              Overloading</button>
                           </h2>
                           <div id="coll16" class="accordion-collapse collapse" aria-labelledby="h16"
                             data-bs-parent="#accordionExample">
@@ -1535,7 +1567,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h17">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll17" aria-expanded="false" aria-controls="coll17">Polymorphism. Overriding</button>
+                              data-bs-target="#coll17" aria-expanded="false" aria-controls="coll17">Polymorphism.
+                              Overriding</button>
                           </h2>
                           <div id="coll17" class="accordion-collapse collapse" aria-labelledby="h17"
                             data-bs-parent="#accordionExample">
@@ -1550,7 +1583,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h18">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll18" aria-expanded="false" aria-controls="coll18">Abstraction, Interface</button>
+                              data-bs-target="#coll18" aria-expanded="false" aria-controls="coll18">Abstraction,
+                              Interface</button>
                           </h2>
                           <div id="coll18" class="accordion-collapse collapse" aria-labelledby="h18"
                             data-bs-parent="#accordionExample">
@@ -1567,7 +1601,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h19">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll19" aria-expanded="false" aria-controls="coll19">Java 8 Interface yangiliklari</button>
+                              data-bs-target="#coll19" aria-expanded="false" aria-controls="coll19">Java 8 Interface
+                              yangiliklari</button>
                           </h2>
                           <div id="coll19" class="accordion-collapse collapse" aria-labelledby="h19"
                             data-bs-parent="#accordionExample">
@@ -1582,7 +1617,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h120">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll120" aria-expanded="false" aria-controls="coll120">Lambda Expression</button>
+                              data-bs-target="#coll120" aria-expanded="false" aria-controls="coll120">Lambda
+                              Expression</button>
                           </h2>
                           <div id="coll120" class="accordion-collapse collapse" aria-labelledby="h120"
                             data-bs-parent="#accordionExample">
@@ -1602,7 +1638,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h121">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll121" aria-expanded="false" aria-controls="coll121">"Javada to`plamlar. Collection va List interfacelari
+                              data-bs-target="#coll121" aria-expanded="false" aria-controls="coll121">"Javada
+                              to`plamlar. Collection va List interfacelari
                               "</button>
                           </h2>
                           <div id="coll121" class="accordion-collapse collapse" aria-labelledby="h121"
@@ -1622,7 +1659,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h121654">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll121654" aria-expanded="false" aria-controls="coll121654">Set va Map. Set interface</button>
+                              data-bs-target="#coll121654" aria-expanded="false" aria-controls="coll121654">Set va Map.
+                              Set interface</button>
                           </h2>
                           <div id="coll121654" class="accordion-collapse collapse" aria-labelledby="h121654"
                             data-bs-parent="#accordionExample">
@@ -1637,7 +1675,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h122">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll122" aria-expanded="false" aria-controls="coll122">Set va Map. Met interface</button>
+                              data-bs-target="#coll122" aria-expanded="false" aria-controls="coll122">Set va Map. Met
+                              interface</button>
                           </h2>
                           <div id="coll122" class="accordion-collapse collapse" aria-labelledby="h122"
                             data-bs-parent="#accordionExample">
@@ -1655,7 +1694,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h123">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll123" aria-expanded="false" aria-controls="coll123">Javada Enum ( Enumeration)</button>
+                              data-bs-target="#coll123" aria-expanded="false" aria-controls="coll123">Javada Enum (
+                              Enumeration)</button>
                           </h2>
                           <div id="coll123" class="accordion-collapse collapse" aria-labelledby="h123"
                             data-bs-parent="#accordionExample">
@@ -1672,7 +1712,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h124">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll124" aria-expanded="false" aria-controls="coll124">Sana va vaqt bilan ishlash</button>
+                              data-bs-target="#coll124" aria-expanded="false" aria-controls="coll124">Sana va vaqt bilan
+                              ishlash</button>
                           </h2>
                           <div id="coll124" class="accordion-collapse collapse" aria-labelledby="h124"
                             data-bs-parent="#accordionExample">
@@ -1707,7 +1748,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h126">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll126" aria-expanded="false" aria-controls="coll126">Istisnolar bilan ishlash (Exeption Handling)</button>
+                              data-bs-target="#coll126" aria-expanded="false" aria-controls="coll126">Istisnolar bilan
+                              ishlash (Exeption Handling)</button>
                           </h2>
                           <div id="coll126" class="accordion-collapse collapse" aria-labelledby="h126"
                             data-bs-parent="#accordionExample">
@@ -1724,7 +1766,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h127">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll127" aria-expanded="false" aria-controls="coll127">Fayllar bilan Ishlash</button>
+                              data-bs-target="#coll127" aria-expanded="false" aria-controls="coll127">Fayllar bilan
+                              Ishlash</button>
                           </h2>
                           <div id="coll127" class="accordion-collapse collapse" aria-labelledby="h127"
                             data-bs-parent="#accordionExample">
@@ -1742,7 +1785,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h128">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll128" aria-expanded="false" aria-controls="coll128">Dasturga Jdk dan boshqa tashqi kutubxonalarni ulash. Gson, va Lombok kutubxonalari</button>
+                              data-bs-target="#coll128" aria-expanded="false" aria-controls="coll128">Dasturga Jdk dan
+                              boshqa tashqi kutubxonalarni ulash. Gson, va Lombok kutubxonalari</button>
                           </h2>
                           <div id="coll128" class="accordion-collapse collapse" aria-labelledby="h128"
                             data-bs-parent="#accordionExample">
@@ -1867,11 +1911,11 @@ https://templatemo.com/tm-575-leadership-event
                           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                              <p>- Not null 
+                              <p>- Not null
                               </p>
-                              <p>- Unique 
+                              <p>- Unique
                               </p>
-                              <p>- Primary key 
+                              <p>- Primary key
                               </p>
                               <p>- Foreign key</p>
                               <p>- Check</p>
@@ -1913,9 +1957,11 @@ https://templatemo.com/tm-575-leadership-event
                               </p>
                               <p>- Komputer texnikalari haqidagi MO strukturasini qurish
                               </p>
-                              <p>- <a href="https://codingbat.com/" target="_blank">https://codingbat.com/</a> platformasini analiz qilish
+                              <p>- <a href="https://codingbat.com/" target="_blank">https://codingbat.com/</a>
+                                platformasini analiz qilish
                               </p>
-                              <p>- <a href="https://codingbat.com/" target="_blank">https://codingbat.com/</a>  platformasi MO strukturasini qurish
+                              <p>- <a href="https://codingbat.com/" target="_blank">https://codingbat.com/</a>
+                                platformasi MO strukturasini qurish
                               </p>
                             </div>
                           </div>
@@ -1924,7 +1970,7 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h6">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll6" aria-expanded="false" aria-controls="coll6">SQL so’rovlar tili. 
+                              data-bs-target="#coll6" aria-expanded="false" aria-controls="coll6">SQL so’rovlar tili.
                             </button>
                           </h2>
                           <div id="coll6" class="accordion-collapse collapse" aria-labelledby="h6"
@@ -1943,7 +1989,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h7">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll7" aria-expanded="false" aria-controls="coll7">So`rovlar bilan ishlash. </button>
+                              data-bs-target="#coll7" aria-expanded="false" aria-controls="coll7">So`rovlar bilan
+                              ishlash. </button>
                           </h2>
                           <div id="coll7" class="accordion-collapse collapse" aria-labelledby="h7"
                             data-bs-parent="#accordionExample">
@@ -1963,7 +2010,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h8">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll8" aria-expanded="false" aria-controls="coll8">"Union, Intersect va Except, Joinlar bilan ishlash
+                              data-bs-target="#coll8" aria-expanded="false" aria-controls="coll8">"Union, Intersect va
+                              Except, Joinlar bilan ishlash
                               "
                             </button>
                           </h2>
@@ -1972,7 +2020,7 @@ https://templatemo.com/tm-575-leadership-event
                             <div class="accordion-body">
                               <p>- Union, Intersect va Except buyruqlari
                               </p>
-                              <p>- Cross join va inner join 
+                              <p>- Cross join va inner join
                               </p>
                               <p>- Left, right va natural joinlar
                               </p>
@@ -1983,13 +2031,14 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h9">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll9" aria-expanded="false" aria-controls="coll9">Viewlar bilan ishlash. SQL tili funksiyalari
+                              data-bs-target="#coll9" aria-expanded="false" aria-controls="coll9">Viewlar bilan ishlash.
+                              SQL tili funksiyalari
                             </button>
                           </h2>
                           <div id="coll9" class="accordion-collapse collapse" aria-labelledby="h9"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                              <p>- Wielar bilan ishlash 
+                              <p>- Wielar bilan ishlash
                               </p>
                               <p>- Ichki funksiyalar: Math functions
                               </p>
@@ -2005,7 +2054,8 @@ https://templatemo.com/tm-575-leadership-event
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="h10">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#coll10" aria-expanded="false" aria-controls="coll10">Pl/pgSQL da funksiya yaratish. Triggerlar
+                              data-bs-target="#coll10" aria-expanded="false" aria-controls="coll10">Pl/pgSQL da funksiya
+                              yaratish. Triggerlar
                             </button>
                           </h2>
                           <div id="coll10" class="accordion-collapse collapse" aria-labelledby="h10"
@@ -2046,7 +2096,7 @@ https://templatemo.com/tm-575-leadership-event
       </div>
     </section>
 
-    <!-- <section class="call-to-action py-5">
+    <!-- <section class="call-to-action section-padding">
             <div class="container">
                 <div class="row align-items-center">
 
@@ -2065,116 +2115,79 @@ https://templatemo.com/tm-575-leadership-event
             </div>
         </section> -->
 
-    <!-- <section class="pricing py-5" id="section_5">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-10 col-12 text-center mx-auto mb-5">
-                        <h2>Get Your <u class="text-info">Tickets</u></h2>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0">
-                        <div class="pricing-thumb bg-white shadow-lg">
-                            <div class="pricing-title-wrap d-flex align-items-center">
-
-                                <h4 class="pricing-title text-white mb-0">Early Bird</h4>
-
-                                <h5 class="pricing-small-title text-white mb-0 ms-auto">$640</h5>
-                            </div>
-
-                            <div class="pricing-body">
-                                <p>
-                                    <i class="bi-cup me-2"></i> All-Day Coffee + Snacks
-                                </p>
-
-                                <p>
-                                    <i class="bi-controller me-2"></i> After Party
-                                </p>
-
-                                <p>
-                                    <i class="bi-chat-square me-2"></i> 24/7 Support
-                                </p>
-
-                                <div class="border-bottom pb-3 mb-4"></div>
-
-                                <p>Quick group meetings for multiple teams</p>
-
-                                <a class="custom-btn btn mt-3" href="#">Buy Tickets</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0">
-                        <div class="pricing-thumb bg-white shadow-lg">
-                            <div class="pricing-title-wrap d-flex align-items-center">
-
-                                <h4 class="pricing-title text-white mb-0">Gold</h4>
-
-                                <h5 class="pricing-small-title text-white mb-0 ms-auto">$840</h5>
-                            </div>
-
-                            <div class="pricing-body">
-                                <p>
-                                    <i class="bi-cup me-2"></i> All-Day Coffee + Snacks
-                                </p>
-
-                                <p>
-                                    <i class="bi-boombox me-2"></i> Group Meetings + After Party
-                                </p>
-
-                                <p>
-                                    <i class="bi-chat-square me-2"></i> 24/7 Support + Instant Chats
-                                </p>
-
-                                <div class="border-bottom pb-3 mb-4"></div>
-
-                                <p>Quick group meetings for multiple teams</p>
-
-                                <a class="custom-btn btn mt-3" href="#">Buy Tickets</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="pricing-thumb bg-white shadow-lg">
-                            <div class="pricing-title-wrap d-flex align-items-center">
-
-                                <h4 class="pricing-title text-white mb-0">Platinum</h4>
-
-                                <h5 class="pricing-small-title text-white mb-0 ms-auto">$1,240</h5>
-                            </div>
-
-                            <div class="pricing-body">
-                                <p>
-                                    <i class="bi-cash me-2"></i> Cashback $200
-                                </p>
-
-                                <p>
-                                    <i class="bi-boombox me-2"></i> Private Meetings + After Party
-                                </p>
-
-                                <p>
-                                    <i class="bi-chat-square me-2"></i> 24/7 Support + Instant Chats
-                                </p>
-
-                                <div class="border-bottom pb-3 mb-4"></div>
-
-                                <p>group talks and private chats for multiple teams</p>
-
-                                <a class="custom-btn btn mt-3" href="#">Buy Tickets</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section> -->
-
-    <section class="venue py-5" id="section_4">
+    <section class="pricing section-padding" id="section_4">
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-12 col-12">
+          <div class="col-lg-10 col-12 text-center mx-auto mb-5">
+            <h2>Kursning <u class="text-info">Afzalliklari</u></h2>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0">
+            <div class="pricing-thumb bg-white shadow-lg">
+              <div class="pricing-title-wrap d-flex align-items-center">
+
+                <h4 class="pricing-title text-white mb-0">Darslar to'liq amaliyot asosida o'tiladi
+                </h4>
+
+              </div>
+
+              <div class="pricing-body">
+                <p>
+                  “Amaliyotsiz taʼlim suvsiz quduq kabidir” deyishadi. Olgan bilimlaringiz
+                  haqiqatda foydali boʻlishi uchun kurslarimiz amaliy mashgʻulotlar bilan boyitilgan.
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0">
+            <div class="pricing-thumb bg-white shadow-lg">
+              <div class="pricing-title-wrap d-flex align-items-center">
+
+                <h4 class="pricing-title text-white mb-0">Mentor va asisent bilan doimiy ishlash</h4>
+              </div>
+
+              <div class="pricing-body">
+                <p>
+                  Darslarni oʻzlashtirish davrida sizda savollar tugʻilishi tabiiy holat.
+                  Mentorlarga murojaat qilsangiz, ular sizni qiynayotgan masalalar boʻyicha yechim topishga yoʻl
+                  koʻrsatadilar.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="pricing-thumb bg-white shadow-lg">
+              <div class="pricing-title-wrap d-flex align-items-center">
+
+                <h4 class="pricing-title text-white mb-0">Kursni bitirib sertifikatga ega bo'lish</h4>
+
+              </div>
+
+              <div class="pricing-body">
+                <p>
+                  Kursni muvaffaqiyatli yakunlaganingizdan soʻng sizga elektron sertifikat taqdim etiladi. Zarurat
+                  boʻlsa, qogʻoz koʻrinishidagi sertifikatga murojaatnoma qoldirishingiz va belgilangan vaqtda
+                  &#60;D&#47;&#62; STUDY oʻquv markazidan olib ketishingiz mumkin.
+                </p>
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="venue section-padding secondary-padding" id="section_5">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-12 col-12 text-center">
             <h2 class="mb-5">Bizning <u class="text-info">Manzil</u></h2>
           </div>
 
@@ -2193,22 +2206,36 @@ https://templatemo.com/tm-575-leadership-event
               </div>
 
               <div class="venue-info-body">
-                <h4 class="d-flex">
+                <h5 class="d-flex location">
                   <i class="bi-geo-alt me-2"></i>
-                  <span>Vobkent tumani eski sug'urta binosi</span>
-                </h4>
-
-                <h5 class="mt-4 mb-3">
-                  <a href="https://t.me/Dariko_LTD">
-                    <i class="bi-envelope me-2"></i>
-                    Dariko_LTD
-                  </a>
+                  Buxoro viloyati, Vobkent tumani, Imom Buxoriy ko'chasi 36 uy
                 </h5>
 
                 <h5 class="mb-0">
                   <a href="tel: +998912453300">
                     <i class="bi-telephone me-2"></i>
                     +998(91)245-33-00
+                  </a>
+                </h5>
+
+                <h5 class="mt-4 mb-3">
+                  <a href="https://t.me/Dariko_LTD">
+                    <i class="bi-telegram me-2"></i>
+                    Dariko_LTD
+                  </a>
+                </h5>
+
+                <h5 class="mt-4 mb-3">
+                  <a href="https://t.me/Dariko_LTD">
+                    <i class="bi bi-envelope me-2"></i>
+                    Dariko_LTD
+                  </a>
+                </h5>
+
+                <h5 class="mt-4 mb-3">
+                  <a href="https://t.me/Dariko_LTD">
+                    <i class="bi bi-instagram me-2"></i>
+                    Dariko_LTD
                   </a>
                 </h5>
               </div>
@@ -2219,7 +2246,7 @@ https://templatemo.com/tm-575-leadership-event
       </div>
     </section>
 
-    <!-- <section class="contact py-5" id="section_7">
+    <!-- <section class="contact section-padding" id="section_7">
             <div class="container">
                 <div class="row">
 
@@ -2264,7 +2291,7 @@ https://templatemo.com/tm-575-leadership-event
     <div class="container">
       <div class="row align-items-center">
 
-        <div class="col-lg-12 col-12 border-bottom pb-5 mb-5">
+        <div class="col-lg-12 col-12">
           <div class="d-flex">
             <a href="index.html" class="navbar-brand">
               <img class="img-fluid" src="./images/logo.png" alt="" width="200" height="80">
@@ -2282,7 +2309,7 @@ https://templatemo.com/tm-575-leadership-event
           </div>
         </div>
 
-        <div class="col-lg-7 col-12">
+        <!-- <div class="col-lg-7 col-12">
           <ul class="footer-menu d-flex flex-wrap">
             <li class="footer-menu-item"><a href="#" class="footer-menu-link">Our Story</a></li>
 
@@ -2307,7 +2334,7 @@ https://templatemo.com/tm-575-leadership-event
 
             <a href="#section_1" class="bi-arrow-up arrow-icon custom-link"></a>
           </div>
-        </div>
+        </div> -->
 
       </div>
     </div>
